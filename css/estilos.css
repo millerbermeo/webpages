@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap');
+* {
+   box-sizing:border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+/*--------------------------base styles----------------------*/
+
+img {
+    display: block;
+    width: 100%;
+    max-width:100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+.container--flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column {
+    width: 100%;
+}
+
+/*--------------------------header styles----------------------*/
+
+.main header {
+    width: 100%;
+}
+
+.logo {
+    font-size: 1.5em;
+    color: #383737;
+    padding: 10px;
+    font-family: 'Pacifico', cursive;
+    font-weight: 100;
+}
+
+.main-header__contactInfo__phone {
+    background: #c01414de;
+    color: rgb(255, 255, 255);
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.main-header__contactInfo__address {
+    padding: 10px;
+    margin: 0;
+}
+
+.main-header [class*="icom-"]:before {
+    position: relative;
+    top: 2px;
+    right: 5px;
+}
+
+/*--------------------------menu styles----------------------*/
+
+.main-nav {
+    width: 100%;
+    position: relative;
+    z-index: 2000;
+    padding: 10px;
+}
+
+.icon-menu {
+    display: block;
+    color: rgb(255, 255, 255);
+    border: 1px solid white;
+    border-radius: 3px;
+    width: 40px;
+    height: 40px;
+    line-height: 45px;
+    text-align: center;
+    cursor:pointer;
+    font-size: 1.5em;
+
+}
+
+.social-icon {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icon [class*="icon"] {
+    color: rgb(0, 0, 0);
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    width: 35px;
+    height: 35px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    
+}
+
+.social-icon__link {
+    text-decoration: none;
+}
+
+.menu {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background:rgba(0, 0, 0, 0.788);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+    transition: height .3s linear;
+
+}
+
+.menu__link {
+    display: block;
+    padding: 1.6%;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.menu__link:hover {
+    background: #a79b9b;
+}
+.menu__link--select {
+    background: #a79b9b;
+
+}
+.mostrar {
+    height: 250px;
+}
+
+
+/*----------------------banner styles----------------*/
+
+.banner {
+    margin-top: -60px;
+    position: relative;
+}
+
+.banner:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    top: 0;
+}
+
+.banner__content {
+    width: 90%;
+    color: white;
+    text-align: center;
+    position: absolute;
+    z-index: 1500;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 2.3em;
+    font-weight: bold;
+
+}
+
+/*---------------------------main styles-------------*/
+
+.group--color .container {
+    background: #a79b9b;
+    color: white;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.main__title {
+    margin: 15px 0;
+    font-size: 1.8em;
+    font-family: 'Pacifico', cursive;
+    font-weight: 100;
+}
+
+.column__title {
+    font-size: 1.3em;
+
+}
+
+.main__about__description .column:nth-child(2) {
+    padding: 10px;
+}
+   
+
+.btn {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 120px;
+    background: #a79b9b;
+    color: white;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.group__title{
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.8em;
+    margin: 30px;
+}
+
+.fighters-month .column {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+
+.fighters-month__img {
+    margin: auto;
+    max-width: 350px;
+}
+
+.fighters-month__title {
+    font-size: 1.3em;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.fighters-month__price {
+    font-size: 1.5em;
+    color: #050505;
+    font-weight: bold;
+}
+
+/*-------------------------footer styles------------------------*/
+.main-footer {
+    background: #000000;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: .8em;
+    
+}
+
+.copy {
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;    
+}
+
+.main-footer [class*="icon-"] {
+    color: white;
+    text-decoration: none;
+}
+
+.main-footer [class*="icon-"]:before {
+    position: relative;
+    top: 3px;
+    right: 5px;
+}
+
+
+/*-----------------------response styles----------------*/
+
+@media screen and (min-width:480px) {
+   .logo {
+       color: white;
+   } 
+   .main-header__contactInfo {
+       text-align: right;
+   
+}
+
+.main-header__contactInfo__phone {
+    background: none;
+}
+.main-header__contactInfo__address {
+    color: white;
+}
+
+
+  .main-nav {
+      background: rgba(0, 0, 0, 0.5);
+  }
+
+.banner {
+    margin-top: -250px;
+    z-index: -1000;
+}
+.banner_content {
+    font-size: 2em;
+}
+.column--50 {
+    width: 49%;
+  } 
+  .column--50-25{
+      width: 49%;
+  }
+  .column--33{
+      width: 32%;
+  }
+  .main__about__description .column:nth-child(2) {
+    padding-left: 20px;
+    font-size: .9em;
+}
+.main__about_description .btn {
+    margin: 0;
+}
+
+.fighters-month .column {
+    border: 5px solid #ddd;
+    padding: 5px;
+}
+.fighters-month__img {
+    height: 220px;
+    object-fit: cover;
+}
+   
+}
+
+@media screen and (min-width:768px) {
+    .main__title {
+        font-size: 2.2em;
+    }
+    .main__about__description {
+        margin-top: 30px;
+    }
+    .main__about__description .column--50:nth-child(2) {
+        font-size: 1em;
+
+    }
+    .main__about__description .column--50:nth-child(2) .column__txt {
+        line-height: 25px;
+    }
+    .column--50-25 {
+        width: 24.5%;
+    }
+    .column__title {
+        font-size: lem;
+    }
+    .group__title {
+        font-size: 2.2em;
+    }
+  
+}
+
+@media screen and (min-width:1024px) {
+     
+    .logo {
+        font-size: 2em;
+        padding: 0;
+    }
+    .main-header__contactInfo__phone,
+    .main-header__contactInfo__address {
+        padding-right: 0;
+        font-size: 1.5em;
+    }
+    .main-nav {
+        padding: 0;
+    }
+    .banner__content {
+        font-size: 1.5em;
+    }
+    .icon-menu {
+        display: none;
+    }
+    .menu {
+        position: static;
+        display: flex;
+        height: auto;
+        width: auto;
+    }
+    .menu__link {
+        padding: 20px;
+    }
+    group--color .container {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+    .main__title {
+        font-size: 2.4em;
+    }
+    .main__about__description .column--50:nth-child(2) .column__txt {
+        line-height: 25px;
+    }
+}
+
+
+
+
+
+
+
